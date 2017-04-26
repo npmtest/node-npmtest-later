@@ -1,6 +1,6 @@
 # npmtest-later
 
-#### basic test coverage for  later (v1.2.0)  [![npm package](https://img.shields.io/npm/v/npmtest-later.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-later) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-later.svg)](https://travis-ci.org/npmtest/node-npmtest-later)
+#### basic test coverage for  [later (v1.2.0)](https://github.com/bunkat/later#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-later.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-later) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-later.svg)](https://travis-ci.org/npmtest/node-npmtest-later)
 
 #### Determine later (or previous) occurrences of recurring schedules
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-later/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-later/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-later/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-later/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-later/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-later/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-later/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-later/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-later/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-later/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-later/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-later/build/coverage.html/index.html)
 
@@ -35,40 +35,60 @@
 ```json
 
 {
-    "name": "later",
-    "version": "1.2.0",
-    "description": "Determine later (or previous) occurrences of recurring schedules",
-    "keywords": [
-        "schedule",
-        "occurrences",
-        "recur",
-        "cron"
-    ],
-    "author": "BunKat <bill@levelstory.com>",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/bunkat/later.git"
+    "author": {
+        "name": "BunKat"
     },
-    "main": "index.js",
     "browserify": "index-browserify.js",
+    "bugs": {
+        "url": "https://github.com/bunkat/later/issues"
+    },
+    "dependencies": {},
+    "description": "Determine later (or previous) occurrences of recurring schedules",
+    "devDependencies": {
+        "benchmark": "*",
+        "jslint": "*",
+        "mocha": "*",
+        "should": ">=0.6.3",
+        "smash": "~0.0.8",
+        "uglify-js": "*"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "f2cf6c4dd7956dd2f520adf0329836e9876bad0f",
+        "tarball": "https://registry.npmjs.org/later/-/later-1.2.0.tgz"
+    },
+    "gitHead": "76bf6ed7da1dbebd65dd36fe7320df4edd593e00",
+    "homepage": "https://github.com/bunkat/later#readme",
     "jam": {
         "main": "later.js",
         "shim": {
             "exports": "later"
         }
     },
-    "devDependencies": {
-        "smash": "~0.0.8",
-        "mocha": "*",
-        "should": ">=0.6.3",
-        "jslint": "*",
-        "uglify-js": "*",
-        "benchmark": "*"
-    },
+    "keywords": [
+        "schedule",
+        "occurrences",
+        "recur",
+        "cron"
+    ],
     "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "bunkat"
+        }
+    ],
+    "name": "later",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/bunkat/later.git"
+    },
     "scripts": {
-        "test": "./node_modules/.bin/mocha test/**/*-test.js --reporter dot"
-    }
+        "test": "mocha test/**/*-test.js --reporter dot"
+    },
+    "version": "1.2.0",
+    "bin": {}
 }
 ```
 
